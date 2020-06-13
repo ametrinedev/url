@@ -19,6 +19,8 @@ echo redirect_to: %link% >> %url%.md
 echo --- >> %url%.md
 echo File written.
 cls
+git pull origin master
+cls
 git add .
 cls
 git commit -m "new url"
