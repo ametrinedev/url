@@ -17,8 +17,11 @@ echo --- >> %url%.md
 echo title: redirect to %link% >> %url%.md
 echo redirect_to: %link% >> %url%.md
 echo --- >> %url%.md
-echo File written. Opening bash script...
+echo File written.
+cls
 git add .
+cls
 git commit -m "new url"
+cls
 git push origin master
 exit
