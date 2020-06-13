@@ -26,4 +26,14 @@ cls
 git commit -m "new url"
 cls
 git push origin master
+goto :confirm
+:confirm
+cls
+echo.
+echo Your URL is now live at `https://url.ametrine.dev/%url%`
+echo It may take around 30 seconds for the redirect to go live,
+echo due to GitHub Pages pre-publish site building.
+echo.
+echo Press any key to exit.
+pause /nul
 exit
