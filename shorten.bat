@@ -3,7 +3,8 @@ REM URL Shortening script by Ametrine. Find us at https://ametrine.dev/.
 :config
 @echo off
 title URL Shortening thru ametrine.dev
-goto :prompt
+goto :shorten
+del shorten.sh
 :prompt
 cls
 echo.
@@ -18,5 +19,7 @@ echo title: redirect to %link% >> %url%.md
 echo redirect_to: %link% >> %url%.md
 echo --- >> %url%.md
 echo File written. Opening bash script...
-start shorten.sh
+git add .
+git commit -m "new url"
+git push origin master
 exit
