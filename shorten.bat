@@ -3,8 +3,7 @@ REM URL Shortening script by Ametrine. Find us at https://ametrine.dev/.
 :config
 @echo off
 title URL Shortening thru ametrine.dev
-goto :shorten
-del shorten.sh
+goto :prompt
 :prompt
 cls
 echo.
